@@ -6,55 +6,62 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkerActivity"
-    android:background="@color/black">
+    android:background="#15b201">
 
 
     <EditText
         android:id="@+id/report_description"
-        android:layout_width="370dp"
+        android:layout_width="340dp"
         android:layout_height="150dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:gravity="top"
         android:hint="Введите описание работ..."
         android:inputType="textMultiLine"
         android:minLines="10"
         android:padding="16dp"
         android:scrollbars="vertical"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/report_name" />
 
     <EditText
         android:id="@+id/report_name"
-        android:layout_width="370dp"
-        android:layout_height="40dp"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
         android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Название отчёта"
         android:inputType="text"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/send"
-        android:layout_width="370dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:onClick="sendReport"
         android:text="Отправить"
+        android:textColor="@color/black"
+        style="@style/CustomButtonStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/report_description" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back"
-        android:layout_width="370dp"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="396dp"
         android:onClick="back"
         android:text="Назад"
+        style="@style/CustomButtonStyle"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"

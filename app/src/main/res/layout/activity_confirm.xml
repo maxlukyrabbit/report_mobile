@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".confirm"
-    android:background="@color/black">
+    android:background="#15b201">
 
     <ListView
         android:id="@+id/confirm_admin"
@@ -19,12 +19,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.221" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Назад"
+        android:textColor="@color/black"
+        style="@style/CustomButtonStyle"
         android:onClick="back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

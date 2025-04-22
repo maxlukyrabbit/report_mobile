@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".user_add"
-    android:background="@color/black">
+    android:background="#15b201">
 
 
     <EditText
@@ -17,6 +17,7 @@
         android:ems="10"
         android:inputType="text"
         android:hint="ФИО"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,6 +31,7 @@
         android:ems="10"
         android:inputType="text"
         android:hint="Пароль"
+        android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,24 +46,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/reg"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="40dp"
         android:text="Зарегистрироваться"
+        style="@style/CustomButtonStyle"
         android:onClick="reg"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/back"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="100dp"
         android:onClick="back"
         android:text="Назад"
+        android:textColor="@color/black"
+        style="@style/CustomButtonStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"

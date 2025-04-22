@@ -12,47 +12,57 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        android:textColor="@color/white"
         android:text="Сотрудник:"/>
     <TextView
 
         android:id="@+id/installer"
         android:layout_width="match_parent"
         android:visibility="gone"
+        android:textColor="@color/white"
         android:layout_height="wrap_content" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Название отчёта:"/>
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Описание отчёта:"/>
 
     <TextView
         android:id="@+id/message"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Статус:"/>
 
     <TextView
         android:id="@+id/status"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="wrap_content" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/conf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
+        android:textColor="@color/black"
+        style="@style/CustomButtonStyle"
         android:text="Подтвердить работу" />
 </LinearLayout>

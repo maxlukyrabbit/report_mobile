@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/black">
+    android:background="#15b201">
 
     <ImageView
         android:id="@+id/logo"
@@ -25,6 +25,7 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="ФИО"
+        android:textColorHint="@color/black"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -38,27 +39,32 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Пароль"
+        android:textColorHint="@color/black"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/enter"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:onClick="enter"
         android:text="Вход"
+        android:textColor="@color/black"
+        style="@style/CustomButtonStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button2"
         android:layout_width="200dp"
+        style="@style/CustomButtonStyle"
+        android:textColor="@color/black"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:text="Регистрация"
